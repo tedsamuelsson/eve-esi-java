@@ -1,0 +1,20 @@
+
+buildscript {
+    repositories {
+    	mavenLocal()
+        mavenCentral()
+        jcenter()       
+    }       
+}
+group = 'org.devfleet.esi'
+version = '1.0'
+
+allprojects {
+    group = 'org.devfleet.esi'
+    version = '1.0'
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+    }
+}
