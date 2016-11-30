@@ -22,12 +22,12 @@ def generated = "$projectDir/generated/"
 sourceSets {
     main {
         java {
-            srcDirs += "$generated/src/main"
+            srcDirs += "$generated/src/main/java"
         }
     }
     test {
         java {
-            srcDirs += "$generated/src/test"
+            srcDirs += "$generated/src/test/java"
         }
     }
 }
