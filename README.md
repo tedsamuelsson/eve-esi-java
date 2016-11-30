@@ -8,7 +8,7 @@ This repository is a wrapper Java API around the Eve [Online Swagger Interface](
 
 * Download this repository
 
-* Run `gradle build`.
+* Run `gradlew build`.
 
 * Look at `org.devfleet.esi.EsiClient`. You should know what to do.
 
