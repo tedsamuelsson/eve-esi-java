@@ -1,39 +1,41 @@
-package org.devfleet.esi;
+package org.devfleet.esi.impl;
+
+import org.devfleet.esi.api.CharacterHistory;
+import org.devfleet.esi.api.CharacterKey;
+import org.devfleet.esi.api.Character;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Character {
-    //TODO
-    public static class History {
+public class CharacterData implements Character {
 
-    }
-
-    private final List<History> history = new ArrayList<>();
-    private final Long id;
+    private final List<CharacterHistory> history = new ArrayList<>();
+    private final CharacterKey key;
 
     private String portrait64;
     private String portrait128;
     private String portrait256;
     private String portrait512;
 
-    public Character(Long id) {
-        this.id = id;
+    CharacterData(CharacterKey key) {
+        this.key = key;
     }
 
-    public Long getId() {
-        return id;
+    @Override
+    public CharacterKey getKey() {
+        return key;
     }
 
-    public List<History> getHistory() {
+    @Override
+    public List<CharacterHistory> getHistory() {
         return history;
     }
 
-    public Character add(final History h) {
+    public void add(CharacterHistory h) {
         this.history.add(h);
-        return this;
     }
 
+    @Override
     public String getPortrait64() {
         return portrait64;
     }
@@ -42,6 +44,7 @@ public class Character {
         this.portrait64 = portrait64;
     }
 
+    @Override
     public String getPortrait128() {
         return portrait128;
     }
@@ -50,6 +53,7 @@ public class Character {
         this.portrait128 = portrait128;
     }
 
+    @Override
     public String getPortrait256() {
         return portrait256;
     }
@@ -58,6 +62,7 @@ public class Character {
         this.portrait256 = portrait256;
     }
 
+    @Override
     public String getPortrait512() {
         return portrait512;
     }

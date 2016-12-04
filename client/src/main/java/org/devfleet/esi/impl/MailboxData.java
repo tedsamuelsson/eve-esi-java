@@ -1,22 +1,27 @@
-package org.devfleet.esi;
+package org.devfleet.esi.impl;
 
-public class Mailbox {
+import org.devfleet.esi.api.Mailbox;
+import org.devfleet.esi.api.MailboxKey;
 
-    private Long id = null;
+public class MailboxData implements Mailbox {
+
+    private MailboxKey key = null;
     private Long labelId;
     private String label;
 
     private Integer color;
     private Integer unread;
 
-    public Long getId() {
-        return id;
+    public MailboxData(MailboxKey key) {
+        this.key = key;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    @Override
+    public MailboxKey getKey() {
+        return key;
     }
 
+    @Override
     public Long getLabelId() {
         return labelId;
     }
@@ -25,6 +30,7 @@ public class Mailbox {
         this.labelId = labelId;
     }
 
+    @Override
     public String getLabel() {
         return label;
     }
@@ -33,6 +39,7 @@ public class Mailbox {
         this.label = label;
     }
 
+    @Override
     public Integer getColor() {
         return color;
     }
@@ -41,6 +48,7 @@ public class Mailbox {
         this.color = color;
     }
 
+    @Override
     public Integer getUnread() {
         return unread;
     }
