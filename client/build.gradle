@@ -6,8 +6,8 @@ plugins {
 }
 
 //Keep Android people happy by using 1.7 and not 1.8
-sourceCompatibility = JavaVersion.VERSION_1_7
-targetCompatibility = JavaVersion.VERSION_1_7
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 import de.undercouch.gradle.tasks.download.Download
 import org.hidetake.gradle.swagger.generator.GenerateSwaggerCode
