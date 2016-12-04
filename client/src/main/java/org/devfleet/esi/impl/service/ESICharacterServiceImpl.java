@@ -5,7 +5,7 @@ import org.devfleet.esi.api.CharacterApi;
 import org.devfleet.esi.api.CharacterKey;
 import org.devfleet.esi.api.service.ESICharacterService;
 import org.devfleet.esi.impl.CharacterData;
-import org.devfleet.esi.impl.ESITransformer;
+import org.devfleet.esi.helper.ESITransformer;
 import org.devfleet.esi.model.GetCharactersCharacterIdCorporationhistory200Ok;
 import org.devfleet.esi.model.GetCharactersCharacterIdOk;
 import org.devfleet.esi.model.GetCharactersCharacterIdPortraitOk;

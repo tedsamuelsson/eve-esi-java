@@ -1,21 +1,22 @@
 package org.devfleet.esi;
 
 import org.apache.oltu.oauth2.common.token.BasicOAuthToken;
+import org.devfleet.esi.api.service.ESIServiceFactory;
 import org.devfleet.esi.client.auth.OAuth;
-import org.devfleet.esi.impl.EsiServiceImpl;
+import org.devfleet.esi.impl.service.ESIServiceFactoryImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.devfleet.esi.client.ApiClient;
 
-public class EsiClient {
+public class ESIClient {
 
-    private static final Logger LOG = LoggerFactory.getLogger(EsiClient.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ESIClient.class);
 
     private final ApiClient apiClient;
-    private final EsiService service;
+    private final ESIServiceFactory service;
 
-    public EsiClient(final String clientID,
+    public ESIClient(final String clientID,
                      final String clientSecret,
                      final String redirectUri) {
 
@@ -27,10 +28,10 @@ public class EsiClient {
                 onAccessTokenChanged(token.getAccessToken(), token.getRefreshToken());
             }
         });
-        this.service = new EsiServiceImpl(apiClient);
+        this.service = new ESIServiceFactoryImpl(apiClient);
     }
 
-    public final EsiService getService() {
+    public final ESIServiceFactory getService() {
         return this.service;
     }
 

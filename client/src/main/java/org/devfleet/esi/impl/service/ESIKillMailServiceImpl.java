@@ -2,7 +2,7 @@ package org.devfleet.esi.impl.service;
 
 import org.devfleet.esi.api.*;
 import org.devfleet.esi.api.service.ESIKillMailService;
-import org.devfleet.esi.impl.ESITransformer;
+import org.devfleet.esi.helper.ESITransformer;
 import org.devfleet.esi.impl.KillMailData;
 import org.devfleet.esi.model.GetCharactersCharacterIdKillmailsRecent200Ok;
 import org.devfleet.esi.model.GetKillmailsKillmailIdKillmailHashOk;

@@ -5,7 +5,7 @@ import org.devfleet.esi.api.CharacterKey;
 import org.devfleet.esi.api.service.ESIMailService;
 import org.devfleet.esi.api.Mail;
 import org.devfleet.esi.api.MailApi;
-import org.devfleet.esi.impl.ESITransformer;
+import org.devfleet.esi.helper.ESITransformer;
 import org.devfleet.esi.impl.MailData;
 import org.devfleet.esi.impl.MailboxData;
 import org.devfleet.esi.model.GetCharactersCharacterIdMail200Ok;

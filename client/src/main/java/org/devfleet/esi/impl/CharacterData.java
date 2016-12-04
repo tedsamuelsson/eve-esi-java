@@ -17,7 +17,7 @@ public class CharacterData implements Character {
     private String portrait256;
     private String portrait512;
 
-    CharacterData(CharacterKey key) {
+    public CharacterData(CharacterKey key) {
         this.key = key;
     }
 

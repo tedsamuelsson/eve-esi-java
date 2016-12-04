@@ -5,7 +5,7 @@ import org.devfleet.esi.api.CorporationKey;
 import org.devfleet.esi.api.CorporationMember;
 import org.devfleet.esi.api.service.ESICorporationService;
 import org.devfleet.esi.impl.CorporationData;
-import org.devfleet.esi.impl.ESITransformer;
+import org.devfleet.esi.helper.ESITransformer;
 import org.devfleet.esi.model.GetCorporationsCorporationIdAlliancehistory200Ok;
 import org.devfleet.esi.model.GetCorporationsCorporationIdIconsOk;
 import org.devfleet.esi.model.GetCorporationsCorporationIdMembers200Ok;
